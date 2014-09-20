@@ -1,0 +1,28 @@
+{block #content}
+	
+	{if $actuality == NULL}
+
+		<h1>{$actualPage->getTitle()}</h1>
+
+		{foreach $news as $new}
+			<div>
+				<h2>{$new->getTitle()}</h2>
+				
+				{if $new->getDefaultPhoto()}
+					<img src="{$basePath}{$new->getDefaultPhoto()->getPath()|thumbnail:'system'}" />
+				{/if}
+				
+				{$new->getDate()->format('d.m.Y')}
+				{!$new->getPerex()}
+
+				<a n:href="default parameters => array($new->getSlug()), abbr => $abbr, path => $actualPage->getPath()">{_'Detail'}</a>
+			</div>
+		{/foreach}
+	
+	{else}
+		
+		{include detail.latte}
+		
+	{/if}
+	
+{/block}

@@ -1,0 +1,13 @@
+temp
+nbproject
+libs
+log
+composer.lock
+composer.json
+www/upload
+www/thumbnails
+www/admin-client
+www/client
+www/sitemap.xml
+app/bootstrap.php
+app/proxies

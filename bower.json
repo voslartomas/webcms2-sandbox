@@ -1,0 +1,21 @@
+{
+  "name": "webcms2_FronLibraries",
+  "version": "1.0.0",
+  "authors": [
+    "Tomas Voslar <tomas.voslar@webcook.cz>"
+  ],
+  "description": "Front libraries for WebCMS2",
+  "keywords": [
+    "webcms2",
+    "front"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.webcook.cz",
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.0",
+    "nette.ajax.js": "~1.2.2",
+    "lightbox2" : "latest",
+    "Webcms-LESS-structure" : "latest"
+  }
+}
